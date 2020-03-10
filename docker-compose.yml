@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: ./compose/frontend/Dockerfile-dev
+    command: /start-dev.sh
+    environment:
+      - PORT={PORT}
+      - NODE_ENV=development
+    ports:
+      - '3000:3000'
+    expose:
+      - '3000'
+    networks:
+      - default-network
+    volumes:
+      - ./frontend:/home/service/test/frontend/
+      - node_modules:/home/service/test/frontend/node_modules/
+
+volumes:
+  node_modules:
+
+networks:
+  default-network:
+    driver: bridge

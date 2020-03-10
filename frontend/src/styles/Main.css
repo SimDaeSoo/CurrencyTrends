@@ -1,0 +1,14 @@
+.Main .chart_container {
+  max-width: 1024px;
+  padding: 10px;
+  padding-top: 20px;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #2d2e32;
+  box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+}
