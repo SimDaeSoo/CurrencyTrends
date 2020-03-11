@@ -97,7 +97,7 @@ class Main extends React.Component {
     render() {
         return (
             <div className="Main">
-                <div className="header">Currency Trends</div>
+                <div className="header">- Currency Trends -</div>
                 {this.charts}
             </div>
         );
