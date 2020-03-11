@@ -1,8 +1,5 @@
 .Main .chart_container {
   max-width: 1024px;
-  padding: 10px;
-  border-width: thin;
-  border-style: solid;
   border-radius: 10px;
   overflow: hidden;
   margin: auto;
@@ -10,4 +7,16 @@
   margin-bottom: 10px;
   background-color: #2d2e32;
   box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+.Main .chart_wrapper {
+  margin: 10px;
+}
+
+.Main .header {
+  font-size: 2em;
+  color: white;
+  margin: 10px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
