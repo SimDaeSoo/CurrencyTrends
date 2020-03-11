@@ -4,7 +4,7 @@ services:
   frontend:
     build:
       context: .
-      dockerfile: ./compose/frontend/Dockerfile-dev
+      dockerfile: ./compose/Dockerfile-dev
     command: /start-dev.sh
     environment:
       - PORT={PORT}
@@ -16,7 +16,7 @@ services:
     networks:
       - default-network
     volumes:
-      - ./frontend:/home/service/test/frontend/
+      - ./:/home/service/test/frontend/
       - node_modules:/home/service/test/frontend/node_modules/
 
 volumes:

@@ -5,5 +5,5 @@ WORKDIR /home/service/test/frontend
 ENV NODE_ENV development
 ENV PORT 3000
 
-ADD compose/frontend/start-dev.sh /start-dev.sh
+ADD compose/start-dev.sh /start-dev.sh
 RUN chmod +x /*.sh
