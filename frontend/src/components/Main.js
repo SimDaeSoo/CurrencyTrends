@@ -47,12 +47,12 @@ class Main extends React.Component {
         for (const code of this.state.codes) {
             elements.push(
                 <ResponsiveContainer width='100%' height={200} className='chart_container' key={code} id={code}>
-                    <LineChart data={this.state.datas}>
+                    <LineChart data={this.state.datas} margin={{ right: 20, top: 0 }}>
                         <CartesianGrid strokeDasharray="2 2" />
-                        <XAxis dataKey="name" interval={70} />
-                        <YAxis domain={[dataMin => Number((dataMin * 0.9).toFixed(2)), dataMax => Number((dataMax * 1.1).toFixed(2))]} />
+                        <XAxis dataKey="name" hide={true} />
+                        <YAxis domain={[dataMin => Number((dataMin * 0.9).toFixed(2)), dataMax => Number((dataMax * 1.1).toFixed(2))]} hide={true} />
                         <Tooltip />
-                        <Legend />
+                        <Legend verticalAlign='top' height={30} />
                         <Line type="monotone" dataKey={code} stroke={this.randomColor} dot={false} />
                     </LineChart>
                 </ResponsiveContainer>
