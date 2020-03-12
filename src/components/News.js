@@ -18,6 +18,17 @@ class News extends React.Component {
     async fetchCurrencyData() {
         const result = await Network.get('http://13.209.124.232:8000/api/news');
         const { news } = result;
+        news.sort((compareA, compareB) => {
+            const timeA = new Date(compareA.date).getTime();
+            const timeB = new Date(compareB.date).getTime();
+            if (timeA < timeB) {
+                return 1;
+            } else if (timeA > timeB) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
         this.setState({ news });
     }
 
