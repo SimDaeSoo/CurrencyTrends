@@ -1,0 +1,12 @@
+.Currencies {
+  width: 65%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .Currencies {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+}

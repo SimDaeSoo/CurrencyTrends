@@ -1,12 +1,14 @@
 import React from 'react';
-import Main from './Main';
+import Currencies from './Currencies';
+import News from './News';
 import '../styles/App.css';
 
 class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Main />
+        <Currencies />
+        <News />
       </div>
     );
   }

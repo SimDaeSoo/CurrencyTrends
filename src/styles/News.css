@@ -1,0 +1,19 @@
+.News {
+  height: 100%;
+  overflow: auto;
+  width: 35%;
+  color: white;
+}
+
+.News .card_list {
+  width: 100%;
+  text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+  .News {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+  }
+}

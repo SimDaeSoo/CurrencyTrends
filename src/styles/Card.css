@@ -1,30 +1,30 @@
-.Main .chart_container {
+.card_list .card {
+  margin: 10px;
   border-style: solid;
   border-width: thin;
   border-radius: 10px;
   border-color: #000000;
   background-color: #2d2e32;
   box-shadow: 9px 7px 40px -6px rgba(0, 0, 0, 0.25);
-  color: white;
-}
-
-.Main .chart_wrapper {
-  width: calc(50% - 20px);
-  max-width: 1024px;
-  margin: 10px;
+  text-align: left;
   display: inline-block;
 }
 
-.Main .header {
-  font-size: 2em;
-  color: white;
+.card .title {
+  font-size: 1em;
   margin: 10px;
   margin-bottom: 0;
+  height: 19px;
+  overflow: hidden;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
-@media screen and (max-width: 1024px) {
-  .Main .chart_wrapper {
-    width: calc(100% - 20px);
-  }
+.card .author,
+.card .date {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: grey;
 }
