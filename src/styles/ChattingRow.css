@@ -1,0 +1,24 @@
+.ChattingRow {
+  width: calc(100% - 4px);
+  margin: 2px;
+  display: flex;
+}
+
+.time_stamp {
+  text-align: center;
+  color: #0d0e12;
+  width: 84px;
+  margin-right: 4px;
+}
+
+.user {
+  width: 100px;
+  text-align: center;
+  margin-right: 4px;
+}
+
+.chat_text {
+  text-align: left;
+  color: grey;
+  margin-left: 4px;
+}

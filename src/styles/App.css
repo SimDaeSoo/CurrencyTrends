@@ -4,6 +4,20 @@
   height: 100%;
 }
 
+.main_wrapper {
+  width: 65%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .main_wrapper {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .App {
     display: block;

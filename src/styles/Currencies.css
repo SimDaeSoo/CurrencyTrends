@@ -1,5 +1,6 @@
 .Currencies {
-  width: 65%;
+  width: 100%;
+  height: calc(100% - 200px);
   overflow: auto;
 }
 
