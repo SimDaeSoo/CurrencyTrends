@@ -20,12 +20,12 @@ class Card extends React.Component {
     }
 
     linking() {
-        this.props.link ? window.open(this.props.link) : null;
+        if (this.props.link) window.open(this.props.link)
     }
 
     render() {
         return (
-            <div className="card" onClick={this.linking}>
+            <div className="card" onClick={this.linking.bind(this)}>
                 <div className="title">{this.title}</div>
                 <div className="author">{this.author}</div>
                 <div className="date">{this.date}</div>
