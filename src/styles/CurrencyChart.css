@@ -15,9 +15,9 @@
     display: inline-block;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .Currencies .chart_wrapper {
         width: calc(100% - 20px);
-        max-width: 1024px;
+        max-width: 768px;
     }
 }

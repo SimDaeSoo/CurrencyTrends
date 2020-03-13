@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .main_wrapper {
     width: 100%;
     height: auto;
@@ -18,7 +18,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .App {
     display: block;
   }
