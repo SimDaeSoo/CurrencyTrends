@@ -3,6 +3,7 @@
   height: 200px;
   display: inline-block;
   position: relative;
+  background-color: #1d1e22;
 }
 
 .chatting_user {
@@ -57,7 +58,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  .chatting_display {
+    width: calc(100% - 4px);
+  }
+  
   .Chat {
-    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
   }
 }

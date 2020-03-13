@@ -2,6 +2,7 @@
   width: calc(100% - 4px);
   margin: 2px;
   display: flex;
+  overflow-x: hidden;
 }
 
 .time_stamp {
@@ -12,12 +13,13 @@
 }
 
 .user {
-  width: 100px;
+  width: 70px;
   text-align: center;
   margin-right: 4px;
 }
 
 .chat_text {
+  width: calc(100% - 154px);
   text-align: left;
   color: grey;
   margin-left: 4px;

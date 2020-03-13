@@ -14,7 +14,7 @@ class App extends React.Component {
           <Chat />
         </div>
         <News />
-        <API />
+        {/* <API /> */}
       </div>
     );
   }
