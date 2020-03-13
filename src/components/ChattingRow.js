@@ -3,7 +3,7 @@ import '../styles/ChattingRow.css';
 
 class ChattingRow extends React.Component {
     get date() {
-        const date = new Date(this.props.log.time);
+        const date = new Date(this.props.log.date);
         const hour = `${date.getHours() < 10 ? 0 : ''}${date.getHours()}`;
         const minutes = `${date.getMinutes() < 10 ? 0 : ''}${date.getMinutes()}`;
         const seconds = `${date.getSeconds() < 10 ? 0 : ''}${date.getSeconds()}`;

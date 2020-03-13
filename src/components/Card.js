@@ -19,13 +19,13 @@ class Card extends React.Component {
         return <div dangerouslySetInnerHTML={{ __html: this.props.date }} />;
     }
 
-    linking() {
+    linking = () => {
         if (this.props.link) window.open(this.props.link)
     }
 
     render() {
         return (
-            <div className="card" onClick={this.linking.bind(this)}>
+            <div className="card" onClick={this.linking}>
                 <div className="title">{this.title}</div>
                 <div className="author">{this.author}</div>
                 <div className="date">{this.date}</div>
