@@ -34,7 +34,7 @@ class News extends React.Component {
 
     get newsElements() {
         return this.state.news.map((news) => {
-            return <Card title={news.title} author={news.author} date={news.date} key={news.title} />;
+            return <Card title={news.title} author={news.author} date={news.date} key={news.title} link={news.link} />;
         });
     }
 
