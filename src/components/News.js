@@ -16,7 +16,7 @@ class News extends React.Component {
     }
 
     async fetchCurrencyData() {
-        const result = await Network.get('http://13.209.124.232:8000/api/news');
+        const result = await Network.get('https://www.currency-trends.com/api/news');
         const { news } = result;
         news.sort((compareA, compareB) => {
             const timeA = new Date(compareA.date).getTime();

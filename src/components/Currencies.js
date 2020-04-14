@@ -17,7 +17,7 @@ class Currencies extends React.Component {
     }
 
     async fetchCurrencyData() {
-        const result = await Network.get('http://13.209.124.232:8000/api/currency');
+        const result = await Network.get('https://www.currency-trends.com/api/currency');
         const { currencies } = result;
         this.setChartData(currencies);
     }

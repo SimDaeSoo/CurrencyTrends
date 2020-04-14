@@ -17,7 +17,7 @@ class Chat extends React.Component {
     }
 
     componentDidMount() {
-        const socket = SocketIO('http://13.209.124.232:8000/');
+        const socket = SocketIO('https://www.currency-trends.com/');
         socket.on('message', this.message.bind(this));
         socket.on('initialize', this.initialize.bind(this));
         socket.on('currentUser', this.setCurrentUser.bind(this));
